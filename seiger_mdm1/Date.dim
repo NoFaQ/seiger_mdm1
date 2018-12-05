@@ -163,6 +163,7 @@
       <Name>Date</Name>
       <Type>Date</Type>
       <Usage>Key</Usage>
+      <EstimatedCount>2191</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="752aaf85-a269-4282-9dba-0e38204fdfe6">
           <DataType>Integer</DataType>
@@ -381,6 +382,7 @@
       <ID>Fiscal Year</ID>
       <Name>Fiscal Year</Name>
       <Type>FiscalYears</Type>
+      <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="65e0f3db-1549-4507-8468-ef7fa6322614">
           <DataType>SmallInt</DataType>
@@ -414,6 +416,7 @@
       <ID>Fiscal Quarter Desc</ID>
       <Name>Fiscal Quarter</Name>
       <Type>FiscalQuarters</Type>
+      <EstimatedCount>24</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="ef909488-362a-4e31-bd78-1fa93f1e1ca6">
           <DataType>SmallInt</DataType>
@@ -453,6 +456,7 @@
       <ID>Calendar Quarter Desc</ID>
       <Name>Calendar Quarter</Name>
       <Type>Quarters</Type>
+      <EstimatedCount>24</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="b6c6d880-0e09-4fd3-958f-b9d19c0185ca">
           <DataType>SmallInt</DataType>
@@ -497,6 +501,7 @@
       <ID>Calendar Semester Desc</ID>
       <Name>Calendar Semester</Name>
       <Type>HalfYears</Type>
+      <EstimatedCount>12</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="4ead37d4-5998-4b5d-bf7c-258a9a6bc68a">
           <DataType>SmallInt</DataType>
@@ -536,6 +541,7 @@
       <ID>Fiscal Semester Desc</ID>
       <Name>Fiscal Semester</Name>
       <Type>FiscalHalfYears</Type>
+      <EstimatedCount>12</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="2f35b8f3-fb8f-47a0-92c2-d8ffa17c3d00">
           <DataType>SmallInt</DataType>
@@ -575,6 +581,7 @@
       <ID>Month Name</ID>
       <Name>Month Name</Name>
       <Type>Months</Type>
+      <EstimatedCount>72</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="a58cd553-bb07-4b66-8bab-275a8e7e6c29">
           <DataType>SmallInt</DataType>
@@ -729,6 +736,7 @@
       <ID>Calendar Year Desc</ID>
       <Name>Calendar Year</Name>
       <Type>Years</Type>
+      <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="468d5d88-60bb-4cb5-8453-1fc20e39f5e4">
           <DataType>SmallInt</DataType>
@@ -788,6 +796,7 @@
       <ID>Fiscal Week Desc</ID>
       <Name>Fiscal Week</Name>
       <Type>FiscalWeeks</Type>
+      <EstimatedCount>319</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="144c3ed7-dcbf-478a-abe3-6f9c1206c3d7">
           <DataType>Integer</DataType>
@@ -827,6 +836,7 @@
       <ID>Calendar Week Desc</ID>
       <Name>Calendar Week</Name>
       <Type>Weeks</Type>
+      <EstimatedCount>318</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="811da049-9218-4dcd-aad5-aca8ea8e6f87">
           <DataType>SmallInt</DataType>

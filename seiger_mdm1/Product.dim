@@ -205,6 +205,7 @@
       <Name>Product</Name>
       <Type>Product</Type>
       <Usage>Key</Usage>
+      <EstimatedCount>606</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="0292c1c8-c215-490a-91eb-b227c268eacb">
           <DataType>Integer</DataType>
@@ -341,6 +342,7 @@
     <Attribute dwd:design-time-name="3cd3654c-090d-434a-ad94-47188a3f8689">
       <ID>Safety Stock Level</ID>
       <Name>Safety Stock Level</Name>
+      <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="10a3a1ec-57cf-4ad1-8fc8-d1c8f2274cf6">
           <DataType>SmallInt</DataType>
@@ -462,6 +464,7 @@
     <Attribute dwd:design-time-name="9792c5cf-d224-4cdf-b781-c7f377179815">
       <ID>Product Line</ID>
       <Name>Product Line</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="f7a895c9-d154-4924-8ff2-517b8ed65710">
           <DataType>WChar</DataType>
@@ -540,6 +543,7 @@
     <Attribute dwd:design-time-name="ef0845cb-db23-4f02-9f65-4815d7dcc7a7">
       <ID>Model Name</ID>
       <Name>Model Name</Name>
+      <EstimatedCount>119</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="a9865cd7-cbd9-41e5-b7b6-55cf91c483f9">
           <DataType>WChar</DataType>
@@ -648,6 +652,7 @@
     <Attribute dwd:design-time-name="8297d9a1-c391-45de-ad31-1dd63ea60ed3">
       <ID>Product Subcategory Key</ID>
       <Name>Subcategory</Name>
+      <EstimatedCount>37</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="8ebe7c8a-42ea-4e5d-b1ac-59d280d6940f">
           <DataType>Integer</DataType>
@@ -681,6 +686,7 @@
       <ID>Product Category Key</ID>
       <Name>Category</Name>
       <Type>ProductCategory</Type>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="c7ce5c48-0340-4ab5-bdfb-7b87e50cca00">
           <DataType>Integer</DataType>

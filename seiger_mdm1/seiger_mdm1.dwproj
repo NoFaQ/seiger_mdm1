@@ -43,7 +43,17 @@
       <Name>Adventure Works DW2012.dsv</Name>
       <FullPath>Adventure Works DW2012.dsv</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>TargetMailing.dsv</Name>
+      <FullPath>TargetMailing.dsv</FullPath>
+    </ProjectItem>
   </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>Bike Buyer.dmm</Name>
+      <FullPath>Bike Buyer.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Roles>
     <ProjectItem>
       <Name>analyst_owner.role</Name>

@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4812" scrolltop="924" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="25294" y="11351" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4812" scrolltop="924" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="23230" y="10319" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -853,6 +853,7 @@
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
+      <EstimatedRows>60398</EstimatedRows>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
         <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ecdce5e9-893c-4ada-ab38-712acecd922d">
@@ -947,6 +948,7 @@
         </Dimension>
       </Dimensions>
       <Partitions />
+      <AggregationDesigns />
     </MeasureGroup>
     <MeasureGroup dwd:design-time-name="a3d3e870-c95f-43d6-9078-200e8a7fcbf7">
       <ID>Internet Sales 1</ID>
@@ -1366,15 +1368,15 @@ End
          ( ParallelPeriod ([Order Date].[Fiscal].[Fiscal Year], 1, [Order Date].[Fiscal].CurrentMember ) ) 
 Then 0  
     When VBA!Abs /* VBA Absolute Value Function */
-         (( KpiValue( "Growth in Customer Base" ) - (KpiValue( "Growth in Customer Base" ),  ParallelPeriod ( [Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  )  
-            /  ( KpiValue( "Growth in Customer Base" ),  ParallelPeriod  ([Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  
+         (( KpiValue( "Growth in Internet Sales" ) - (KpiValue( "Growth in Internet Sales" ),  ParallelPeriod ( [Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  )  
+            /  ( KpiValue( "Growth in Internet Sales" ),  ParallelPeriod  ([Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  
 	/* Difference in actual values of customer growth between current &amp; prior periods expressed as percent */
-         ) &lt;=.02
+         ) &lt;=.03
     Then 0
     When 
-          ( ( KpiValue( "Growth in Customer Base" ) - (KpiValue( "Growth in Customer Base" ),  ParallelPeriod ( [Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  ) 
-          /  ( KpiValue( "Growth in Customer Base" ), ParallelPeriod  ([Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  
-         ) &gt;.02
+          ( ( KpiValue( "Growth in Internet Sales" ) - (KpiValue( "Growth in Internet Sales" ),  ParallelPeriod ( [Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  ) 
+          /  ( KpiValue( "Growth in Internet Sales" ), ParallelPeriod  ([Order Date].[Fiscal].[Fiscal Year],1,[Order Date].[Fiscal].CurrentMember ) )  
+         ) &gt;.03
     Then 1
     Else -1
 End
